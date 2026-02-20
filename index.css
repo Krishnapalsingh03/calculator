@@ -14,7 +14,6 @@ body {
     overflow: hidden;
 }
 
-/* Background decoration to show off the glass blur */
 .background-blobs {
     position: absolute;
     width: 300px;
@@ -33,12 +32,12 @@ body {
 
 .calculator {
     width: 340px;
-    background: rgba(255, 255, 255, 0.05); /* Very transparent white */
-    backdrop-filter: blur(20px); /* The "Glass" magic */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 25px;
     border-radius: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
 }
 
@@ -94,7 +93,7 @@ body {
 .equal { 
     background: #ff9f0a; 
     color: white;
-    grid-row: span 2; /* Keeps your original vertical equal button */
+    grid-row: span 2;
 }
 
 .equal:hover { background: #ffb340; }
@@ -103,5 +102,6 @@ body {
     color: #ff453a; 
     background: rgba(255, 69, 58, 0.1);
 }
+
 
 .span-two { grid-column: span 2; }

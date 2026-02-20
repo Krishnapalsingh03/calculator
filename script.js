@@ -32,7 +32,7 @@ function clearDisplay() {
 
 function calculate() {
     try {
-        // Using eval for basic arithmetic; in production, use a math library for safety
+
         currentInput = eval(currentInput).toString();
     } catch {
         currentInput = "Error";
@@ -40,7 +40,7 @@ function calculate() {
     updateDisplay();
 }
 
-// Bonus: Keyboard Support
+
 document.addEventListener('keydown', (event) => {
     const key = event.key;
     if (/[0-9]/.test(key)) appendNumber(key);
@@ -51,4 +51,5 @@ document.addEventListener('keydown', (event) => {
         currentInput = currentInput.length > 1 ? currentInput.slice(0, -1) : "0";
         updateDisplay();
     }
+
 });
